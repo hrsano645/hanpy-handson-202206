@@ -110,8 +110,9 @@ anacondaの方は頑張ってください！
   - venvが動くか
 - venv上で `pip install openpyxl`
 - 今日利用する資料のDL先
-  - git clone <https://github.com/hrsano645/hands-on-2022.git>
-  - <https://github.com/hrsano645/hands-on-2022> から zip ダウンロード
+  - `git clone https://github.com/hrsano645/hanpy-handson-202206.git`
+  - <https://github.com/hrsano645/hanpy-handson-202206>
+    から zip ダウンロードして展開
 
 ---
 
