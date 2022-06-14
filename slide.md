@@ -30,7 +30,8 @@ backgroundColor: #ddd
 - 静岡Pythonコミュニティの勉強会 Python駿河/Unagi.py
   - 6月は25日開催です！
   - なんとあの有名なパイのメーカーさんの施設で招待制リアル開催になりました🎉
-  - 同時生中継します。詳しくはこちら: https://py-suruga.connpass.com/event/250842/
+  - 同時生中継します。詳しくはこちら:
+    https://py-suruga.connpass.com/event/250842/
 
 ---
 
@@ -45,7 +46,7 @@ backgroundColor: #ddd
 ## 今日のハンズオンのモチベーション
 
 - 普段手作業でやっていることをPythonでやらせてみる
-  - 退屈なことはPy...（以下 オライリーで見てね
+  - 退屈なことはPy...（by オライリー
 - Excelを頑張るのはもうつらい。時間が無い
   - （最近lambda関数やtypescriptを使える楽しさはあるけど）
 - 手作業によるミスやヒューマンエラーを防ぐ
@@ -55,14 +56,15 @@ backgroundColor: #ddd
 
 ---
 
-## しくじり先生: 公開したくない計算用Excelファイルをメールで送る
+## しくじり先生:マル秘な計算用Excelファイルをメール送付
 
 詳しいことは言わない（言えない）
 
 - Excelで計算したものをPDF化変換してメール送付
 - 変換作業は自動化していたが...
 メール送付時に不用意にExcelファイルは触らなくていい
-  - 一部不備があったExcelファイルをメール送付前に  **手動で開いて編集** してしまう
+  - 一部不備があったExcelファイルをメール送付前に
+    **手動で開いて編集** してしまう
 - 生成したPDFをメールに添付したつもりが…
 
 <!-- _footer: 後はわかるな… -->
@@ -77,16 +79,19 @@ backgroundColor: #ddd
 
 ---
 
-## ライブラリをインストールしましょう
+## ライブラリを駆使して便利に使う
 
 - Pythonはバッテリーインクルードな言語
 - 個人/コミュニティ/企業がサードパーティなライブラリをパッケージ公開する
   - `pip`でインストール, pypiにて公開される
   - パッケージはとっても豊富→エコシステムとして成熟している環境
+- Pythonはグルー言語とも言われている
+  - ExcelからPDFを生成して、メール添付することもできる
+  - Excelにデータを入力してもらってシステムに情報を流し込む
 
 今日はxlsxを読み書きできる `openpyxl` を使います
 
-（そのほか標準ライブラリも使いますが、適時解説します）
+そのほかのライブラリは適時解説します
 
 ---
 
@@ -94,8 +99,8 @@ backgroundColor: #ddd
 
 - Python3.10
   - （仮想環境の）venv上で作業します
-- windows 11
-- VSCode
+- Windows 11
+- VS Code
 
 anacondaの方は頑張ってください！
 
@@ -103,22 +108,23 @@ anacondaの方は頑張ってください！
 
 ---
 
-## 確認すること
+## 環境で確認すること
 
 - Python 3.10は入ってる？
   - python3が動くか
   - venvが動くか
 - venv上で `pip install openpyxl`
 - 今日利用する資料のDL先
-  - `git clone https://github.com/hrsano645/hanpy-handson-202206.git`
+  - gitが動く人: 
+    `git clone https://github.com/hrsano645/hanpy-handson-202206.git`
   - <https://github.com/hrsano645/hanpy-handson-202206>
-    から zip ダウンロードして展開
+    からzipダウンロードして展開
 
 ---
 
 ## PythonでExcelファイルを読み込む
 
-**やること**
+### やること
 
 - 帳票的なExcelファイルを読み込む: 架空の業務っぽいファイルを使います
 
@@ -126,7 +132,7 @@ anacondaの方は頑張ってください！
 
 ## PythonでExcelファイルを書き出す
 
-**やること**
+### やること
 
 - 日本の祝日APIからデータを取得する
   - <https://holidays-jp.github.io>
