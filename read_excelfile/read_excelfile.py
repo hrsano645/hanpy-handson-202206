@@ -7,9 +7,6 @@ from openpyxl import load_workbook
 
 HANDSON_DIR = Path(__file__).parent
 EXAMPLE_EXCEL_FILEPATH = HANDSON_DIR / "./example_tyohyo.xlsx"
-# print(EXAMPLE_EXCEL_FILEPATH)
-
-EXPORT_JSON_FILEPATH = HANDSON_DIR / "export_tyohyo.json"
 
 
 def main() -> None:

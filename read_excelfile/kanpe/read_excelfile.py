@@ -7,9 +7,6 @@ from openpyxl import load_workbook
 
 HANDSON_DIR = Path(__file__).parent
 EXAMPLE_EXCEL_FILEPATH = HANDSON_DIR / "./example_tyohyo.xlsx"
-# print(EXAMPLE_EXCEL_FILEPATH)
-
-EXPORT_JSON_FILEPATH = HANDSON_DIR / "export_tyohyo.json"
 
 
 def main() -> None:
@@ -41,11 +38,12 @@ def main() -> None:
     cell_total_amount = ex_ws[celladdr["total_amount"]]
 
     print(
-        f"""従業員番号:{cell_employee_number.value}
-申請者:{cell_employee_name.value}
-明細書番号:{cell_statement_number.value}
-申請日:{cell_application_day.value.isoformat(" ")}
-合計金額:{cell_total_amount.value}
+        f"""
+    従業員番号:{cell_employee_number.value}
+    申請者:{cell_employee_name.value}
+    明細書番号:{cell_statement_number.value}
+    申請日:{cell_application_day.value.isoformat(" ")}
+    合計金額:{cell_total_amount.value}
     """
     )
 
